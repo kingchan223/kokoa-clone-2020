@@ -45,6 +45,20 @@
   justify-content: center;
   align-items: center;
   font-size: 130px;
-  animation: hideSplashScreen 0.22s ease-in-out forwards;
+  animation: hideSplashScreen 3s ease-in-out forwards;
   animation-delay: 2s;
+}
+@keyframes BubbleVibrating {
+  0% {
+    transform: translateX(-20px);
+  }
+  50% {
+    transform: translateX(40px);
+  }
+  100% {
+    transform: translateX(-10px);
+  }
+}
+#splash-screen i {
+  animation: BubbleVibrating 2s ease-in-out forwards;
 }
