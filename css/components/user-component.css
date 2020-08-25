@@ -1,5 +1,6 @@
 .user-component {
   justify-content: space-between;
+  margin-bottom: 15px;
 }
 .user-component,
 .user-component__column:first-child {
@@ -41,17 +42,34 @@
 }
 .user-component__time {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 10px; /* time이 span,
+  즉 inline이라서 margin-top,bottom이 적용이 안된다.
+   그래서 display:block 해줘야함.*/
 }
 .user-component__text-f {
   font-size: 14px;
   font-weight: 600;
 }
-.h {
-}
-.user-component-2 {
-  margin-top: 10px;
+.user-component__text .mini-font1 {
   display: flex;
+  padding: 4px;
+  background-color: white;
+  width: 3px;
+  height: 3px;
+  font-size: 8px;
+  border-radius: 50%;
+  margin-left: 3px;
+  border: 1px solid orangered;
+  position: relative;
+}
+.user-component__text .mini-font1 span {
+  position: absolute;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  top: 1.3px;
+  font-weight: 600;
+  color: orangered;
+}
+.user-component__text h6 {
+  display: flex;
 }

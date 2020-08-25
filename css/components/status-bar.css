@@ -4,11 +4,21 @@
   width: 100%;
   top: 0;
 }
+.small-fixed-bar {
+  background-color: white;
+  position: fixed;
+  width: 100%;
+}
+
 .white {
   background-color: white;
   opacity: 0.01;
   width: 100px;
   height: 135px;
+}
+.small-white {
+  background-color: white;
+  height: 80px;
 }
 .status-bar {
   display: flex;

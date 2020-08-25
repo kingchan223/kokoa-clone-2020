@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Friend to kakao talk</title>
+    <title>More to kakao talk</title>
   </head>
   <body>
     <div class="fixed-bar">
@@ -21,10 +21,11 @@
         </div>
       </div>
       <header class="screen-header">
-        <h1 class="screen-header__title"><a href="index.html">Friends</a></h1>
+        <h1 class="screen-header__title"><a href="index.html">More</a></h1>
         <div class="screen-header__icons">
           <span><i class="fas fa-search fa-lg"></i></span>
           <span><i class="fas fa-music fa-lg"></i></span>
+          <span class="nav__dot--top"></span>
           <span
             ><a href="setting.html"><i class="fas fa-cog fa-lg"></i></a
           ></span>
@@ -32,13 +33,8 @@
       </header>
     </div>
     <div class="white"></div>
-
     <div class="under_fixed-bar">
-      <a id="friends-display-link"
-        ><i class="fas fa-info-circle"></i> Friends' Names Display
-        <i class="fas fa-chevron-right fa-xs"></i
-      ></a>
-      <main class="friends-screen">
+      <main class="friends-screen more-screen">
         <div class="user-component">
           <div class="user-component__column">
             <img
@@ -48,53 +44,56 @@
 
             <div class="user-component__text">
               <h4 class="user-component__title">이찬영</h4>
-              <!--<h6 class="user-component__subtitle">this shit can be whatever</h6>
-            --></div>
+              <h6 class="user-component__subtitle">
+                +82 010-7452-8404
+                <div class="mini-font1"><span>!</span></div>
+              </h6>
+            </div>
           </div>
-          <div class="user-component__column"></div>
+          <div class="user-component__column">
+            <i class="far fa-comment-alt fa-2x"></i>
+          </div>
         </div>
-        <div class="friends-screen__channel">
-          <div class="friends-screen__channel-header">
-            <span>친구 2</span><i class="fas fa-chevron-up fa-xs"></i>
+        <div class="icon-row">
+          <div class="icon-row__icon">
+            <i class="far fa-calendar-check"></i>
+            <span>Calendar</span>
           </div>
-          <div class="user-component">
-            <div class="user-component__column">
-              <img
-                src="screenshots/haa.PNG"
-                class="user-component__avatar user-component__avatar--xs"
-              />
-
-              <div class="user-component__text-f">
-                <h4
-                  class="user-component__title user-component__title--not-bold user-component__text-f"
-                >
-                  혜민이
-                </h4>
-              </div>
-            </div>
-            <div class="user-component__column">
-              <div>
-                <span>2</span><i class="fas fa-chevron-right fa-xs"></i>
-              </div>
-            </div>
+          <div class="icon-row__icon">
+            <i class="fas fa-box"></i>
+            <span>Talk Drive</span>
           </div>
-          <div class="user-component">
-            <div class="user-component__column">
-              <img
-                src="screenshots/fa.PNG"
-                class="user-component__avatar user-component__avatar user-component__avatar--2"
-              />
+          <div class="icon-row__icon">
+            <i class="far fa-laugh"></i>
+            <span>Emoticons</span>
+          </div>
+          <div class="icon-row__icon">
+            <i class="fas fa-palette"></i><span>Themes</span>
+          </div>
+        </div>
+        <div class="more-suggestion">
+          <h4 class="more-suggestion__title">Suggestions</h4>
 
-              <div class="user-component__text-f">
-                <h4
-                  class="user-component__title user-component__title--not-bold user-component__text-f"
-                >
-                  파다
-                </h4>
+          <div class="more-suggestion__icons">
+            <div class="more-suggestion__icon">
+              <div class="more-suggestion__icon-image">
+                <i class="fas fa-quote-right"></i>
               </div>
+              <span class="more-suggestion__icon-text">Kokoa story</span>
             </div>
-            <div class="user-component__column">
-              <span class="user-component__time"></span>
+
+            <div class="more-suggestion__icon">
+              <div class="more-suggestion__icon-image">
+                <i class="fas fa-cat"></i>
+              </div>
+              <span class="more-suggestion__icon-text">Kokoa Friends</span>
+            </div>
+
+            <div class="more-suggestion__icon">
+              <div class="more-suggestion__icon-image">
+                <i class="fas fa-shopping-cart"></i>
+              </div>
+              <span class="more-suggestion__icon-text">Kokoa Shopping</span>
             </div>
           </div>
         </div>
@@ -105,7 +104,7 @@
       <ul class="nav__list">
         <li class="nav__btn">
           <a class="nav__link" href="friends.html"
-            ><i class="fas fa-user fa-2x"></i
+            ><i class="far fa-user fa-2x"></i
           ></a>
         </li>
         <li class="nav__btn">
@@ -129,10 +128,6 @@
         </li>
       </ul>
     </nav>
-    <div id="splash-screen">
-      <i class="fas fa-comment"></i>
-    </div>
-
     <div id="no-mobile">
       <span>Your screen is too big </span>
     </div>

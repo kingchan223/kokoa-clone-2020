@@ -1,0 +1,132 @@
+.find-icons {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 25px;
+}
+.find-icons__icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(68, 26, 9);
+}
+.find-icons__icon span {
+  margin-top: 19px;
+}
+
+.find-icons__icon i {
+  font-size: 30px;
+}
+.recommanded-friends {
+  border-bottom: var(--main-border);
+  border-top: var(--main-border);
+  padding: 25px 0px 80px 0px;
+}
+.recommanded-friends span {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  color: var(--main-grey);
+}
+.recommanded-friends__title {
+  font-size: 14px;
+  color: var(--main-grey);
+}
+
+.open-chat__header {
+  display: flex;
+  justify-content: space-between;
+  color: var(--main-grey);
+  padding-top: 5px;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+.open-chat__header span {
+  opacity: 0.7;
+}
+.open-post {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.open-post__title {
+  font-weight: 500;
+  margin-bottom: 7px;
+  font-size: 18px;
+}
+.open-post__hashtags {
+  text-transform: uppercase;
+  color: var(--main-grey);
+  opacity: 0.8;
+  font-size: 13px;
+  margin-bottom: 7px;
+}
+.open-post__members {
+  display: flex;
+  align-items: center;
+}
+.open-post__members img {
+  height: 20px;
+  width: 20px;
+  border-radius: 40%;
+}
+.open-post__members-status {
+  color: rgb(223, 47, 199);
+}
+.open-post__members-count {
+  margin-left: 5px;
+  margin-right: 5px;
+  color: var(--main-grey);
+}
+.open-post__members-count,
+.open-post__members-status {
+  font-size: 12px;
+}
+.open-post__members .divider {
+  width: 1px;
+  height: 10px;
+  background-color: var(--main-grey);
+  margin-right: 5px;
+}
+
+.open-post__photo img {
+  height: 100px;
+  width: 100px;
+  border-radius: 10px;
+}
+.open-post__photo {
+  position: relative;
+}
+.open-post__heart-count {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px;
+  border-radius: 20px;
+  color: white;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+.open-post__heart-count span {
+  margin-left: 3px;
+}
+
+@keyframes heartBeat {
+  0% {
+    color: white;
+    transform: none;
+  }
+  50% {
+    transform: scale(2);
+    color: red;
+  }
+  100% {
+    transform: none;
+    color: white;
+  }
+}
+.open-post__heart-count:hover i {
+  will-change: transform;
+  animation: heartBeat 1s linear infinite;
+}

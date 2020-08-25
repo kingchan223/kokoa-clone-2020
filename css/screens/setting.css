@@ -1,0 +1,31 @@
+.setting-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+.setting-bar__title {
+  font-size: 20px;
+  font-weight: 600;
+}
+.settings__setting {
+  padding: 20px 0px;
+  border-bottom: var(--main-border);
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+.settings__setting i {
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+.settings__setting {
+  position: relative;
+  display: flex;
+}
+.settings__setting__text {
+  position: absolute;
+  right: 23px;
+  color: rgba(0, 0, 0, 0.5);
+}
