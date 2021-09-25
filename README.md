@@ -1,3 +1,2 @@
-#Kokoa Clone 2020 Update
 
-HTML & CSS are so much fun!
+카카오톡 화면을 클론하며 HTML & CSS 배우기.
